@@ -1,0 +1,34 @@
+body {
+    background-color: #F0DCCA;
+}
+    
+h1 {
+    color: #59475a;
+    font-family: 'Playfair Display', serif;
+}
+h2 {
+    color: #685369;
+}
+h3 {
+    color: #685369;
+}
+h4 {
+    color: #6F9283;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+ul {
+    color: #6F9283;
+}
+
+a:link {
+    color: #59475a;
+}
+
+a:visited {
+    color: #5e1761;
+}
+
+.fit-picture {
+    width: 80px;
+}
