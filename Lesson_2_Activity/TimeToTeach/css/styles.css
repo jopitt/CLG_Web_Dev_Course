@@ -1,34 +1,41 @@
 body {
-    background-color: #F0DCCA;
+    background-color: #F5E9E2;
 }
     
 h1 {
-    color: #59475a;
+    color: #68b169;
     font-family: 'Playfair Display', serif;
-}
-h2 {
-    color: #685369;
-}
-h3 {
-    color: #685369;
-}
-h4 {
-    color: #6F9283;
-    font-style: italic;
-    font-family: 'Playfair Display', serif;
-}
-ul {
-    color: #6F9283;
 }
 
-a:link {
-    color: #59475a;
+h2 {
+    color: #3F7CAC;
+}
+
+h3 {
+    color: #3F7CAC;
+}
+
+h4 {
+    color: #32373B;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-weight:bolder
+}
+
+p {
+    font-size: 20px;
+    color: #32373B;
+}
+
+ul {
+    color: #32373B;
+}
+
+a {
+    color: #7EB77F;
 }
 
 a:visited {
-    color: #5e1761;
+    color: #F92A82;
 }
 
-.fit-picture {
-    width: 80px;
-}
