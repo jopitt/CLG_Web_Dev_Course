@@ -4,7 +4,6 @@ body {
     
 h1 {
     color: #68b169;
-    font-family: 'Playfair Display', serif;
 }
 
 h2 {
@@ -18,7 +17,6 @@ h3 {
 h4 {
     color: #32373B;
     font-style: italic;
-    font-family: 'Playfair Display', serif;
     font-weight:bolder
 }
 
