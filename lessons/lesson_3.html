@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <title>CLG Lesson 3</title>
+  </head>
+  <body>
+    <h1>Foundations of Web Development</h1>
+    <h2>Lesson 3: Lists, Tables and Images</h2>
+    <h3>Lists</h3>
+    <ul>
+      <li>Lists contain groups of related data.</li>
+      <li>Ordered lists are created using <span>ol</span> tag. Each list item is enclosed in <span>li</span> tags.</li>
+      <li>Unordered lists are created using <span>ul</span> tags. Each list item is enclosed in <span>li</span> tags.</li>
+      <li>The CSS style that controls the bullet or number style used by a list is <span>list-style-type</span>.</li>
+      <li>For unordered lists, <span>list-style-types</span> include:
+        <ul>
+          <li style="list-style-type: disc;">disc</li>
+          <li style="list-style-type: circle;">circle</li>
+          <li style="list-style-type: square;">square</li>
+        </ul>
+      </li>
+      <li>For ordered lists, <span>list-style-types</span> include:
+        <ol>
+          <li style="list-style-type: decimal;">decimal</li>
+          <li style="list-style-type: lower-latin;">lower-latin</li>
+          <li style="list-style-type: upper-latin;">upper-latin</li>
+          <li style="list-style-type: lower-roman;">lower-roman</li>
+          <li style="list-style-type: upper-roman;">upper-roman</li>
+        </ol>
+      </li>
+    </ul>
+    <h3>Tables</h3>
+    <ul>
+      <li>Tables are created with <span>table</span> tags.</li>
+      <li>Tables have rows, enclosed in "tr" tags, which contain cells defined between <span>td</span> tags.</li>
+      <li>Table rows can be grouped together into header <span>thead</span>, body <span>tbody</span> and footer <span>tfoot</span> sections.</li>
+      <li>Example table:
+        <table class="indexTable">
+          <thead>
+            <tr>
+              <th>Items</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Keyboard</td>
+              <td>40.00</td>
+            </tr>
+            <tr>
+              <td>Mouse</td>
+              <td>15.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td class="thick">Total</td>
+              <td class="thick">55.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </li>
+    </ul>
+    <h3>Images</h3>
+    <ul>
+      <li>Images are embedded in a page using an empty <span>img</span> tag. The <span>src</span> and <span>alt</span> attributes set the location of the image file and alternative text to describe the image.</li>
+      <li>We can style images by changing the following attributes:
+        <ul>
+          <li>height</li>
+          <li>width</li>
+          <li>border</li>
+          <li>padding</li>
+          <li>opacity</li>
+          <li>border-radius.</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>Borders</h3>
+    <ul>
+      <li>Borders can have a <span>border-width</span>, <span>border-style</span> and <span>border-color</span>.</li>
+      <li><span>Border-width</span> can be measured in units like <span>px</span>, <span>em</span>, or keywords <span>thin</span>, <span>medium</span> or <span>thick</span>.</li>
+      <li>Specifying <span>2 values</span> for <span>border-width</span> specifies the values for <span>top and bottom</span>, followed by <span>right and left</span> borders, e.g. <span>border-width: 1px 10px;</span>.</li>
+      <li>Specifying <span>3 values</span> for <span>border-width</span> sets the widths of the <span>top</span>, then <span>left and right</span>, then <span>bottom</span> borders.</li>
+      <li>Specifying <span>4 values</span> for <span>border-width</span> specifies the widths of <span>top</span>, <span>right</span>, <span>bottom</span> and <span>left</span> borders.</li>
+      <li><span>Border-style</span> sets the line pattern. It can be:
+        <ul>
+          <li>solid</li>
+          <li>dashed</li>
+          <li>dotted</li>
+          <li>double</li>
+          <li>none</li>
+          <li>inset</li>
+          <li>outset</li>
+          <li>groove</li>
+          <li>ridge.</li>
+          </li>
+        </ul>
+      </li>
+      <li><span>Border-color</span> sets the border colour.</li>
+      <li>As with border-width, you can set 1, 2, 3 or 4 values for border-style and border-color to set the values for different sides independently.</li>
+      <li>The <span>border shortcut</span> allows you to set width, style and colour in one go, e.g. <span>border: solid 1px red;</span>.</li>
+      <li>The <span>CSS Box Model</span> shows how the overall width and height an element occupies on a page and consists of the element's height and width, the padding, the border and the margin.</li>
+      <li>Specific order of the <span>CSS Box Model</span> is:
+        <ul>
+          <li>element contents</li>
+          <li>padding</li>
+          <li>border</li>
+          <li>margin.</li>
+        </ul>
+      </li>
+    </ul><br>
+    <h3 class="textCentre"><a href="/contact.html" target="_blank">Contact Us</a></h3>
+    <h3 class="textCentre"><a style="color: #7eb77f" href="/index.html" target="_blank">Home</a></h3>
+    <script src="js/main.js"></script>
+  </body>
+</html>
