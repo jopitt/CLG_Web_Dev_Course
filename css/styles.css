@@ -73,19 +73,31 @@ span {
 }
 
 #section-1 {
+    border: 3px solid #3F7CAC;
     background-color: #7EB77F;
+    padding: 35px;
 }
 
 #section-2 {
-    background-color: #f92a8247;
+    border: 3px solid #7eb77f;
     background-image: url(../images/space-g30adea84e_640.png);
-    background-repeat: repeat-y;
-    background-position: right;
+    padding: 30px;
 }
 
+#wrapper-2 {
+    background-color:#f92a82d4;
+    padding: 5px;    
+}
 
 #section-3 {
+    border: 3px solid yellow;
     background-image: url(../images/sun-g8a41971b8_640.jpg);
+    padding: 30px;
+}
+
+#wrapper-3 {
+    background-color: white;
+    padding: 5px;
 }
 
 .contactTable {
