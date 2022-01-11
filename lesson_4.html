@@ -12,9 +12,9 @@
     <h2>Lesson 4: Divs, spans, IDs and classes</h2>
     <div id="section-1">
       <h3>Formatting tags</h3>
-      <ul>
+      <ul class="whiteFont">
         <li>Some HTML elements are used primarily for formatting:
-          <ul>
+          <ul class="whiteFont">
             <li><span>sub</span> for subscript test<sub>like this</sub></li>
             <li><span>sup</span> for superscript text<sup>like this</sup>
             </li>
@@ -26,7 +26,7 @@
           </ul>
         </li>
         <li>Modern web pages have mainly moved away from using <span>b</span>, <span>i</span> and <span>u</span> tags and instead use:
-          <ul>
+          <ul class="whiteFont">
             <li><span>em</span> for <em>emphasis</em>, styled italic by default</li>
             <li><span>strong</span> for <strong>important</strong>, styled bold by default</li>
           </ul>
@@ -37,12 +37,12 @@
     <div id="section-2"> 
       <div id="wrapper-2"> 
         <h3>Divs, spans, IDs and Classes</h3>
-        <ul>
+        <ul class="whiteFont">
           <li><span>Div</span> and <span>span</span> are generic elements used to help style HTML.</li>
           <li><span>Div</span> elements are <span>block</span> level elements. They allow you to group html elements together.</li>
           <li><span>Span</span> elements are <span>inline</span> elements. They allow you to apply different styles to parts of elements.</li>
           <li>A <span>block</span> level element:
-            <ul>
+            <ul class="whiteFont">
               <li>starts on a new line</li>
               <li>takes up the full width of its parent element</li>
               <li>has the elements after it start on the next line.</li>
@@ -50,7 +50,7 @@
           </li>
           <li>You can set the width and height of block level elements.</li>
           <li>An <span>inline</span> element:
-            <ul>
+            <ul class="whiteFont">
               <li>does not have its own line</li>
               <li>is the width of its contents.</li>
             </ul>
@@ -72,14 +72,23 @@
     <div id="section-3">
       <div id="wrapper-3">
       <h3>Background styling</h3>
-        <ul>
+        <ul> 
           <li>We can control the background of an element using the following properties:
             <ul>
               <li><span>background-color</span></li>
               <li><span>background-image</span> url('imagepath')</li>
               <li><span>background-repeat</span> repeat-x, repeat-y, repeat or no-repeat</li>
               <li><span>background-position</span> left or right and top or bottom</li>
-            </ul>
+              <li><span>background-size:</span>
+                <ul>
+                  <li>contain (scales as large as possible within its container without cropping or stretching)</li>
+                  <li>cover (scales the image as large as possible to fill the container, stretching if necessary)</li>
+                  <li>auto (scales the background image in the corresponding direction such that its intrinsic proportions are maintained)</li>
+                  <li>"length" (stretches the image in the corresponding dimension to the specified length)</li>
+                  <li>"percentage" (stretches the image in the corresponding dimension to the specified percentage of the background positioning area)</li>
+                </ul>
+              </li>
+            </ul> 
           </li>
           <li>Or, to keep our CSS neater, we can use the <span>background</span> shorthand property, e.g.<br>
             <span>.container {<br>

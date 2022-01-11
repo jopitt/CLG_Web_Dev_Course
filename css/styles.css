@@ -78,6 +78,10 @@ span {
     padding: 35px;
 }
 
+.whiteFont {
+    color: white;
+}
+
 #section-2 {
     border: 3px solid #7eb77f;
     background-image: url(../images/space-g30adea84e_640.png);
