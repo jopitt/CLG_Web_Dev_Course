@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/styles.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;600&display=swap" rel="stylesheet">
     <title>CLG Lesson 4</title>
   </head>
   <body>
-    <h1>Foundations of Web Development</h1>
+    <h1>Foundations of <span>Web Development</span></h1>
     <h2>Lesson 4: Divs, spans, IDs and classes</h2>
-    <div id="section-1">
+    <div id="section1">
       <h3>Formatting tags</h3>
-      <ul class="whiteFont">
+      <ul>
         <li>Some HTML elements are used primarily for formatting:
-          <ul class="whiteFont">
+          <ul>
             <li><span>sub</span> for subscript test<sub>like this</sub></li>
             <li><span>sup</span> for superscript text<sup>like this</sup>
             </li>
@@ -26,7 +28,7 @@
           </ul>
         </li>
         <li>Modern web pages have mainly moved away from using <span>b</span>, <span>i</span> and <span>u</span> tags and instead use:
-          <ul class="whiteFont">
+          <ul>
             <li><span>em</span> for <em>emphasis</em>, styled italic by default</li>
             <li><span>strong</span> for <strong>important</strong>, styled bold by default</li>
           </ul>
@@ -34,15 +36,15 @@
         <li>The <span>b</span> and <span>i</span> tags can still be used, but they are seen less often and used only when other tags aren't appropriate.</li>
       </ul>
     </div><br>
-    <div id="section-2"> 
-      <div id="wrapper-2"> 
+    <div id="section2"> 
+      <div id="wrapper2"> 
         <h3>Divs, spans, IDs and Classes</h3>
-        <ul class="whiteFont">
+        <ul>
           <li><span>Div</span> and <span>span</span> are generic elements used to help style HTML.</li>
           <li><span>Div</span> elements are <span>block</span> level elements. They allow you to group html elements together.</li>
           <li><span>Span</span> elements are <span>inline</span> elements. They allow you to apply different styles to parts of elements.</li>
           <li>A <span>block</span> level element:
-            <ul class="whiteFont">
+            <ul>
               <li>starts on a new line</li>
               <li>takes up the full width of its parent element</li>
               <li>has the elements after it start on the next line.</li>
@@ -50,7 +52,7 @@
           </li>
           <li>You can set the width and height of block level elements.</li>
           <li>An <span>inline</span> element:
-            <ul class="whiteFont">
+            <ul>
               <li>does not have its own line</li>
               <li>is the width of its contents.</li>
             </ul>
@@ -69,18 +71,18 @@
         </ul>
       </div>
     </div><br>
-    <div id="section-3">
-      <div id="wrapper-3">
+    <div id="section3">
+      <div id="wrapper3">
       <h3>Background styling</h3>
-        <ul> 
+        <ul class="originalColor"> 
           <li>We can control the background of an element using the following properties:
-            <ul>
+            <ul class="originalColor">
               <li><span>background-color</span></li>
               <li><span>background-image</span> url('imagepath')</li>
               <li><span>background-repeat</span> repeat-x, repeat-y, repeat or no-repeat</li>
               <li><span>background-position</span> left or right and top or bottom</li>
               <li><span>background-size:</span>
-                <ul>
+                <ul class="originalColor">
                   <li>contain (scales as large as possible within its container without cropping or stretching)</li>
                   <li>cover (scales the image as large as possible to fill the container, stretching if necessary)</li>
                   <li>auto (scales the background image in the corresponding direction such that its intrinsic proportions are maintained)</li>
@@ -97,10 +99,9 @@
           </li>
         </ul>
       </div>
-    </div>
-    <br>
-    <h3 class="textCentre"><a href="/contact.html" target="_blank">Contact Us</a></h3>
-    <h3 class="textCentre"><a style="color: #7eb77f" href="/index.html" target="_blank">Home</a></h3>
+    </div><br>
+    <p id="contactUs"><a href="/contact.html" target="_blank">Contact Us</a></p><br>
+    <p id="home"><a href="/index.html" target="_blank">Home</a></p>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>CLG Lesson 5</title>
+  </head>
+  <body>
+    <h1>Foundations of <span>Web Development</span></h1>
+    <h2>Lesson 5: CSS Selectors and Positioning</h2>
+    <h3>CSS Selectors</h3>
+      <ul>
+        <li>The CSS <span>descendant selector</span> is used to style any element that's within another element, e.g. <br>
+        <span>div p { background-color: yellow; }</span></li>
+        <li>The <span>child selector</span> pattern styles only elements that are <span>direct children</span> of the first element specified, e.g. <br>
+        <span>div > p { background-color: yellow; }</span><br>
+        will only style a paragraph element directly after a div element.</li>
+      </ul>
+      <h3>Combining selectors</h3>
+        <ul>
+          <li>We can use descendent or child selector patterns to be more specific by targeting an element's <span>class</span> or <span>ID</span>, e.g. <br>
+          <span>#main > .column { <br>
+          background-color: yellow; <br>
+          }</span></li>
+          <li>We can keep adding children or descendants to a selector to keep making it even more specific.</li>
+          <li>The selecting rules apply, no matter how many levels deep or how specific you want to be <br>
+          <span>#main .times li span { <br>
+          background-color: yellow; <br>
+          }</span></li>
+        </ul>
+      <h3>CSS positioning</h3>
+        <ul> 
+          <li>The position of elements on a page can be altered with the CSS <span>position</span> property.</li>
+          <li>The position values are:
+            <ul>
+              <li>static</li>
+              <li>relative</li>
+              <li>absolute</li>
+              <li>fixed.</li>
+            </ul>
+          </li>
+          <li><span>Position static</span> means the element is in its usual position within the page. This is the default position for all elements.</li>
+          <li><span>Relative positioning</span> displaces the element relative to its usual position on the webpage. <br>
+          The properties <span>top</span>, <span>left</span>, <span>bottom</span>, <span>right</span> control how far from its original position the element gets displaced.</li>
+          <li><span>Absolute positioning</span> removes the element from the usual flow of the page. <br>
+          It positions the element relative to its <span>closest ancestor</span> with a position that is not static. If no other elements have positions set, absolute positioning is relative to the browser window.</li>
+          <li><span>Fixed positioning</span> keeps the position of an element fixed when a user scrolls the page.</li>
+        </ul><br>
+      <p id="contactUs"><a href="/contact.html" target="_blank">Contact Us</a></p><br>
+      <p id="home"><a href="/index.html" target="_blank">Home</a></p>
+    <script src="js/main.js"></script>
+  </body>
+</html>
