@@ -106,7 +106,6 @@ div table a {
 }
 
 /*lesson 3 table*/
-
 #lesson3Table > table {
     margin: 50px auto;
     border: 1px solid #7eb77f;
@@ -114,6 +113,7 @@ div table a {
     font-size: 20px;
     font-family: 'Playfair Display', serif;
 }
+
 #lesson3Table tfoot td {
     border-top-width: thick;
 }
@@ -162,6 +162,47 @@ div table a {
     padding: 5px;
 }
 
+/*lesson 5 page examples*/
+#example {
+    position: relative;
+    background: white;
+    padding: 5px;
+}
+
+li > p {
+    text-align: left;
+    border: 1px solid black;
+    margin: 0px 0px;
+}
+
+#static #p2 {
+    position: static;
+    background: #7EB77F;
+}
+
+#relative #p2 {
+    position: relative;
+    top: -10px;
+    background: #7EB77F;
+}
+
+#absolute #p2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #7EB77F;
+}
+
+#fixed #p2 {
+    position: fixed;
+    top: 300px;
+    right: 25px;
+    background: #f92a82;
+    padding: 20px;
+    color: white;
+    
+}
+
 #contactUs > a {
     color: white;
     font-family: 'gluten', cursive;
@@ -180,6 +221,7 @@ div table a {
     text-align: center;   
 }
 
+/*contact page*/
 #contactUs img {
     border: solid #7EB77F 5px;
     border-radius: 20px;
