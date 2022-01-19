@@ -75,7 +75,6 @@ div > p > a {
     background-color: #f92a82;
     text-decoration: none;
     padding: 10px 10px;
-    position: relative;
 }
 
 div > table {
@@ -105,7 +104,6 @@ div table a {
     text-decoration: none;
 }
 
-/*lesson 3 table*/
 #lesson3Table > table {
     margin: 50px auto;
     border: 1px solid #7eb77f;
@@ -119,37 +117,37 @@ div table a {
 }
 
 /*lesson 4 page*/
-#section1 {
+#lesson4s-1 {
     border: 3px solid #3F7CAC;
     background-color: #7EB77F;
     padding: 35px;
 }
 
 /*lesson 4 page*/
-#section1 ul {
+#lesson4s-1 ul {
     color: white;
 }
 
 /*lesson 4 page*/
-#section2 {
+#lesson4s-2 {
     border: 3px solid #7eb77f;
     background-image: url(../images/space-g30adea84e_640.png);
     padding: 30px;
 }
 
 /*lesson 4 page*/
-#wrapper2 {
+#lesson4s-2a {
     background-color:#f763a3fe;
     padding: 5px; 
 }
 
 /*lesson 4 page*/
-#wrapper2 ul {
+#lesson4s-2a ul {
     color: white; 
 }
 
 /*lesson 4 page*/
-#section3 {
+#lesson4s-3 {
     border: 3px solid yellow;
     background-image: url(../images/sun-g8a41971b8_640.jpg);
     padding: 30px;
@@ -157,7 +155,7 @@ div table a {
 }
 
 /*lesson 4 page*/
-#wrapper3 {
+#lesson4s-3a {
     background-color: white;
     padding: 5px;
 }
@@ -177,20 +175,23 @@ li > p {
 
 #static #p2 {
     position: static;
-    background: #7EB77F;
+    background: #f92a82;
+    color: white;
 }
 
 #relative #p2 {
     position: relative;
     top: -10px;
-    background: #7EB77F;
+    background: #f92a82;
+    color: white;
 }
 
 #absolute #p2 {
     position: absolute;
     top: 0px;
     left: 0px;
-    background: #7EB77F;
+    background: #f92a82;
+    color: white;
 }
 
 #fixed #p2 {
@@ -198,7 +199,6 @@ li > p {
     top: 300px;
     right: 25px;
     background: #f92a82;
-    padding: 20px;
     color: white;
     
 }
