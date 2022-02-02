@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>CLG Lesson 6</title>
+  </head>
+  <body>
+    <h1>Foundations of <span>Web Development</span></h1>
+    <h2>Lesson 6: Modern HTML & CSS</h2>
+    <h3>HTML Semantics</h3>
+    <ul>
+      <li>HTML5 is the latest version of HTML.</li>
+      <li>HTML5 adds new capabilities to the HTML such as new elements used for multimedia.</li>
+      <li>It also includes new <span>semantic elements</span> such as <span>footer</span>, <span>nav</span> and <span>article</span>, which better describe the meaning of the content on the page.</li>
+      <li>We use the <span>header</span> tag and <span>footer</span> tag to represent our site's main header and footer respectively (used only once on the webpage).</li>
+      <li>The <span>nav</span> element can wrap a site's navigation. There could be multiple sets of navigational content:
+        <ul>
+          <li>in the header</li>
+          <li>another one in the sidebar</li>
+          <li>a smaller one in the footer.</li>
+        </ul>
+      </li>
+      <li>There are also several semantic elements to wrap certain types of page content too, e.g. <br>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span>article</span></td>
+                <td>usually wraps smaller independent pieces of content (articles are self-contained material and shouldn't need an context)</td>
+              </tr>
+              <tr>
+                <td><span>section</span></td>
+                <td>represents a new segment on your page and acts like a divider</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+    </ul>
+    <h3>CSS Flexbox</h3>
+    <ul>
+      <li><span>Flexbox</span> is a set of CSS rules that provides a more efficient way to lay out, align and distribute <span>space and items</span> in a container.<br>
+      It allows for more complete web page designs by challenging the default block and inline layouts. <br>
+      Flexbox works horizontally and/or vertically.</li>
+      <li>To start a flexbox layout, all you need is a parent element (container) with at least 1 child. <br>
+      The <span>display</span> property enables a flexbox layout. <br>
+      Changing the <span>display</span> property on that container enables flexible content for all its direct children, e.g.<br>
+      <span>.container {<br>
+        display: flex;<br>
+        }</span> <br>
+      By default, if you only set <span>display: flex</span>, all flex items will be positioned on 1 line within their parent container.</li>
+      <li>The <span>flex-direction</span> sets the diretion items are placed in the container, e.g. <br>
+      <span>.container { <br>
+      flex-direction: row | row-reverse | column | column-reverse;<br>
+      }</span> <br>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Item layout</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span>row</span></td>
+                <td>default property - items are placed the same as the text direction</td>
+              </tr>
+              <tr>
+                <td><span>row-reverse</span></td>
+                <td>items are placed opposite to the text direction</td>
+              </tr>
+              <tr>
+                <td><span>column</span></td>
+                <td>items are placed top to bottom</td>
+              </tr>
+              <tr>
+                <td><span>column-reverse</span></td>
+                <td>itmes are plaed bottom to top</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li>The other axis to consider when working with flexbox is the <span>cross axis</span>. This is perpendicular to what you define in flex-direction. <br>
+      By default, this would be vertical.</li>
+      <li>The <span>flex-wrap</span> property will adjust how the items wrap within the container, e.g. <br>
+      <span>.container { <br>
+        flex-wrap: nowrap | wrap | wrap-reverse; <br>
+      }</span> <br>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Item layout</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span>no wrap</span></td>
+                <td>default property - every item is fit to a single line</td>
+              </tr>
+              <tr>
+                <td><span>wrap</span></td>
+                <td>items wrap to additional lines</td>
+              </tr>
+              <tr>
+                <td><span>wrap-reverse</span></td>
+                <td>items wrap around to additional lines in reverse</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li>The <strong><span>flex-flow</span></strong> property combines the properties <i>flex-direction</i> and <i>flex-wrap</i>, e.g. <br>
+      <span>.container { <br>
+        flex-flow: column wrap; <br>
+      }</span></li>
+      <li>The <span>justify-content</span> property aligns items horizontally (or vertically when flex direction in column), e.g. <br>
+      <span>.container { <br>
+        justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; <br>
+      }</span> <br>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Item layout</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span>flex-start</span></td>
+              <td>default property - items align to the left side of the container</td>
+            </tr>
+            <tr>
+              <td><span>flex-end</span></td>
+              <td>items align to the right side of the container</td>
+            </tr>
+            <tr>
+              <td><span>center</span></td>
+              <td>items align at the center of the container</td>
+            </tr>
+            <tr>
+              <td><span>space-between</span></td>
+              <td>items display with equal spacing between them</td>
+            </tr>
+            <tr>
+              <td><span>space-around</span></td>
+              <td>items display with equal spacing around them</td>
+            </tr>
+            <tr>
+              <td><span>space-evenly</span></td>
+              <td>does a smart little space calculation and evenly distributes left-over space between the items and the edges</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </li>
+    <li>The <span>align-items</span> property aligns items vertically (or horizontally if flex direction is column) and <span>align-self</span> can be used for a specific item, e.g. <br>
+      <span>.container { <br>
+        align-items: stretch | flex-start | flex-end | center; <br>
+      }</span> <br>
+    or <br>
+    <span>.yellow { <br>
+        align-self: stretch | flex-start | flex-end | center; <br>
+      }</span>
+      <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Item layout</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span>stretch</span></td>
+                <td>default property - items are stretched to fit the container</td>
+              </tr>
+              <tr>
+                <td><span>flex-start</span></td>
+                <td>items align to the top of the container</td>
+              </tr>
+              <tr>
+                <td><span>flex-end</span></td>
+                <td>items align to the bottom of the container</td>
+              </tr>
+              <tr>
+                <td><span>center</span></td>
+                <td>items align at the vertical centre of the container</td>
+              </tr>
+              <tr>
+                <td><span>baseline</span></td>
+                <td>items display at the baseline of the container</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li>The <span>align-content</span> property sets how multiple lines are spaced apart from each other, e.g. <br>
+      <span>.container { <br>
+        align-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly; <br>
+      }</span> <br>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Property</th>
+                <th>Item layout</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span>stretch</span></td>
+                <td>default property - lines display with equal spacing around them</td>
+              </tr>
+              <tr>
+                <td><span>flex-start</span></td>
+                <td>lines are packed at the top of the container</td>
+              </tr>
+              <tr>
+                <td><span>flex-end</span></td>
+                <td>lies are packed at the vertical center of the container</td>
+              </tr>
+              <tr>
+                <td><span>center</span></td>
+                <td>lines are packed at the vertical center of the container</td>
+              </tr>
+              <tr>
+                <td><span>space-between</span></td>
+                <td>lines display with equal spacing between them</td>
+              </tr>
+              <tr>
+                <td><span>space-around</span></td>
+                <td>lines display with equal spacing around them</td>
+              </tr>
+              <tr>
+                <td><span>space-evenly</span></td>
+                <td>evenly distributes the items in the remaining space of the container</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li><i>align-content</i> determines the spacing between lines, while <i>align-items</i> determines how the items as a whole are aligned within the container. When there is only 1 line, <i>align-content</i> has no effect.</li>
+      <li><span>order</span> properties can be assigned to individual items, e.g. <br>
+      <span>.yellow { <br>
+        order: (... -1, 0 (default), 1, ...); <br>
+      }</span></li>
+    </ul><br>
+    <p id="contactUs"><a href="/contact.html" target="_blank">Contact Us</a></p><br>
+    <p id="home"><a href="/index.html" target="_blank">Home</a></p>
+    <script src="js/main.js"></script>
+  </body>
+</html>

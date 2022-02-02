@@ -1,0 +1,253 @@
+body {
+    background-color: #F5E9E2;
+}
+    
+h1 {
+    color: #68b169;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+h1 > span {
+    color:#f92a82;
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #3F7CAC;
+    font-family: 'Playfair Display', serif;
+}
+
+h3 {
+    color: #3F7CAC;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25em;
+}
+
+
+h4 {
+    color: #32373B;
+    font-style: italic;
+    font-weight:bolder;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    font-size: 20px;
+    color: #32373B;
+    font-family: 'Playfair Display', serif;
+}
+
+ul span {
+    color:#3F7CAC;
+}
+
+ol {
+    font-size: 20px;
+    color: #32373B;
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: #f92a82;
+}
+
+/*Landing page (div)*/
+div > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+div > h2 {
+    text-align: center;
+}
+
+/*Go to Lesson buttons*/
+div > p > a {
+    color: white;
+    font-family: 'gluten', cursive;
+    background-color: #f92a82;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+div > table {
+    margin: 50px auto;
+    border: 1px solid #7eb77f;
+    border-spacing: 0;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+div table th {
+    border: 1px solid #7eb77f;
+    padding: 10px 200px 10px 10px;
+}
+
+div table th .centrePadding {
+    padding-right: 100px;
+}
+
+div table td {
+    border: 1px solid #7eb77f;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+}
+
+div table a {
+    text-decoration: none;
+}
+
+#lesson3Table > table {
+    margin: 50px auto;
+    border: 1px solid #7eb77f;
+    border-spacing: 0;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+#lesson3Table tfoot td {
+    border-top-width: thick;
+}
+
+/*lesson 4 page*/
+#lesson4s-1 {
+    border: 3px solid #3F7CAC;
+    background-color: #7EB77F;
+    padding: 35px;
+}
+
+/*lesson 4 page*/
+#lesson4s-1 ul {
+    color: white;
+}
+
+/*lesson 4 page*/
+#lesson4s-2 {
+    border: 3px solid #7eb77f;
+    background-image: url(../images/space-g30adea84e_640.png);
+    padding: 30px;
+}
+
+/*lesson 4 page*/
+#lesson4s-2a {
+    background-color:#f763a3fe;
+    padding: 5px; 
+}
+
+/*lesson 4 page*/
+#lesson4s-2a ul {
+    color: white; 
+}
+
+/*lesson 4 page*/
+#lesson4s-3 {
+    border: 3px solid yellow;
+    background-image: url(../images/sun-g8a41971b8_640.jpg);
+    padding: 30px;
+    
+}
+
+/*lesson 4 page*/
+#lesson4s-3a {
+    background-color: white;
+    padding: 5px;
+}
+
+/*lesson 5 page examples*/
+#example {
+    position: relative;
+    background: white;
+    padding: 5px;
+}
+
+li > p {
+    text-align: left;
+    border: 1px solid black;
+    margin: 0px 0px;
+}
+
+#static #p2 {
+    position: static;
+    background: #f92a82;
+    color: white;
+}
+
+#relative #p2 {
+    position: relative;
+    top: -10px;
+    background: #f92a82;
+    color: white;
+}
+
+#absolute #p2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #f92a82;
+    color: white;
+}
+
+#fixed #p2 {
+    position: fixed;
+    top: 300px;
+    right: 25px;
+    background: #f92a82;
+    color: white;
+    
+}
+
+#contactUs > a {
+    color: white;
+    font-family: 'gluten', cursive;
+    background-color: #f92a82;
+    text-decoration: none;
+    padding: 10px 10px;
+    text-align: center;   
+}
+
+#home > a {
+    color: white;
+    font-family: 'gluten', cursive;
+    background-color: #68b169;
+    text-decoration: none;
+    padding: 10px 10px;
+    text-align: center;   
+}
+
+/*contact page*/
+#contactUs img {
+    border: solid #7EB77F 5px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#contactTable table{
+    border: none;
+    padding: none;
+    font-family: 'Playfair Display', serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactTable table td img {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display:inline;
+}
+
+#contactTable table td {
+    border: none;
+    padding: none;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
