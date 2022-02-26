@@ -43,14 +43,20 @@ ul {
     font-family: 'Playfair Display', serif;
 }
 
+
 ul span {
-    color:#3F7CAC;
+    color: #f92a82;
 }
 
 ol {
     font-size: 20px;
     color: #32373B;
     font-family: 'Playfair Display', serif;
+}
+
+li {
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 a {

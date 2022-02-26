@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>CLG Lesson 7</title>
+  </head>
+  <body>
+    <h1>Foundations of <span>Web Development</span></h1>
+    <h2>Lesson 7: CSS conflicts</h2>
+    <h3>Inheritance</h3>
+    <ul>
+      <li>As we get more advanced with our CSS, how the browser decides which CSS rule to apply becomes more complex.</li>
+      <li>If <span>no value</span> is set for a property on an element, that property <span>inherits</span> the property value of its parent element. <br>
+      This is unless it's a <span>non-inherited</span> property, which will take on the <span>initial</span> value of that property.</li>
+      <li>For example, if we have a parent and child element with a colour and border set on the parent:
+        <ul>
+          <li>the <span>interited color</span> property vlaue would apply to both <span>parent and child</span>, but</li>
+          <li>the <span>non-inherited border</span> would only apply to the <span>parent</span>.</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>Positioning and specificity</h3>
+    <ul>
+      <li>The <span>position</span> of your CSS rules matter if you have competing CSS styles.</li>
+      <li>The <span>latest rule declared</span> in a stylesheet will override any of those that come before it.</li>
+      <li>CSS has various ways you can apply <span>specificity</span> to styling. <br>
+      The <span>more specific</span> a selector is, the higher importance it gets graned by your browser.</li>
+      <li>Later CSS selectors may be <span>overridden</span> by earlier ones if they are <span>more specific</span>.</li>
+      <li>Earlier selectors will take precedence only if they're more specific.</li>
+      <li>Order of specificity of selectors:
+        <ul>
+          <li>IDs</li>
+          <li>classes</li>
+          <li>pure element</li>
+        </ul><br>
+        e.g. <br>
+        <span>#id { color: red; } <br>
+        .class { color: blue; } <br>
+        p { color: yellow; }</span>
+      </li>
+    </ul>
+    <h3>Importance</h3>
+    <ul>
+      <li>The <span>!important</span> value overrides all other rules though we should only use it when we have <span>no other option</span>.</li>
+      <li>Using <span>!important</span> is considered bad development as stylesheets get messy, unreadable and unmaintainable.</li>
+    </ul><br>
+    <p id="contactUs"><a href="/contact.html" target="_blank">Contact Us</a></p><br>
+    <p id="home"><a href="/index.html" target="_blank">Home</a></p>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>CLG Lesson 9</title>
+  </head>
+  <body>
+    <h1>Foundations of <span>Web Development</span></h1>
+    <h2>Lesson 9: HTML Forms</h2>
+    <h3>Form Basics</h3>
+    <ul>
+      <li>We can collect data from users with <span>HTML forms</span>.</li>
+      <li>We create a form using the <span>form</span> element.</li>
+      <li>Within our form tags we can set an array of different types of form inputs.</li>
+      <li>The varying <span>types</span> of input depend on what kind of data you're retrieving from the user, e.g. <br>
+      <span>
+        <h3>Sign up below</h3>
+        <form action="">
+          <input type="text" name="name"
+          placeholder="Full Name"> <br>
+          <input type="email" name="email"
+          placeholder="Email*" required> <br>
+          <input type="password" name="secrets"> <br>
+          <input type="submit" value="Sign up">
+        </form>
+      </span></li>
+      <li>The <span>input</span> element can have different behaviour and appearance if you alter its attributes, e.g. <br>
+      <span>
+        <form>
+          <input type="password" name="secret-code" max="6" required>
+        </form>
+      </span></li>
+      <li>Single-line text inputs are the default input type, e.g. <br>
+      <span>
+        <form>
+          <input type="text" name="full-name">
+        </form>
+      </span>
+    </li>
+    <li>The <span>placeholder</span> attribute adds guidance text for the user.</li>
+    <li><span>Label</span> elements are useful for associating an input with a caption or direction for how to the complete the field, e.g. <br>
+    <span>
+      <form>
+        <label>What's your name? <br>
+          <input type="full-name">
+        </label>
+      </form>
+    </span></li>
+    <li>Or the label can be defined separately. We associated the label to an input by setting the label's <span>for</span> attribute to the input's <span>id</span>attribute, e.g. <br>
+    <span>
+      <form>
+        <label for="inspo-person">
+          Who inspires you?
+        </label> <br>
+        <input type="text" id="inspo-person"> 
+      </form>
+    </span></li>
+    <li>Adding labels to inputs improves accessibility and user experience.</li>
+    </ul>
+    <h3>Textareas</h3>
+    <ul>
+      <li><span>Textareas</span> have similar features to text inputs, though the markup is slightly different, e.g. multi-line responses.</li>
+      <li><span>Textareas</span> do not support the value attribute. Instead, the default value is wrapped in opening and closing <span>textarea</span> tags, e.g. <br>
+      <span>
+        <form>
+          <label for="inspo-why">
+            Why do they inspire you?
+          </label> <br>
+          <textarea id="inspo-why">
+            They inspire me because ...
+          </textarea>
+        </form>
+      </span></li>
+      <li>There are a few form fields we can use if we want to give the user a choice between predefined options:
+        <ul>
+          <li>dropdowns</li>
+          <li>checkboxes</li>
+          <li>radio buttons</li>
+        </ul>
+      </li>
+      <li><span>Dropdowns:</span> The <span>select</span> elemenbt is used to create a <span>dropdown</span>for the user to choose from a list of options, e.g. <br>
+      <span>
+        <form>
+          <select id="inspo-choose">
+            <option value="">Choose someone</option>
+            <option value="ada">Ada</option>
+            <option value="lena">Lena</option>
+          </select>
+        </form>
+      </span></li>
+      <li><span>Checkboxes</span> and <span>radio buttons</span> also allow a user to select from a predefined list of options, e.g. <br>
+      <span>
+        <form action="">
+          <div>
+            <input type="checkbox"
+            name="gang" id="gang" value="Join">
+            <label for="gang">Join the girl gang?</label>
+          </div>
+        </form>
+      </span></li>
+      <li>To create a <span>checkbox</span> we use an <span>input</span> element and set the <span>type</span> attribute to <span>checkbox</span>.</li>
+      <li>User can select multiple checkboxes at once.</li>
+      <li>For a <span>radio button</span>, we use the <span>input</span> element and set the <span>type</span> attribute to <span>radio</span>, e.g. <br>
+      <span>
+        <form action="">
+          <h4>When?</h4>
+          <div>
+            <input type="radio" name="when" id="week" value="weekly">
+            <label for="week">Weekly</label>
+          </div>
+          <div>
+            <input type="radio" name="when" id="day" value="daily">
+            <label for="day">Daily</label>
+          </div>
+        </form>
+      </span></li>
+      <li><span>Radio buttons</span>, however, should be grouped into a set. To do this we declare the <span>same name</span> for each input in the set. Users can only select one of the radio buttonsin a set at a time.</li>
+      <li>The important distinction between these 2 input types is that <span>multiple checkboxes</span> can be selected at once, e.g. <br>
+      <span>
+        <form action="">
+          <div>
+            <input type="checkbox" name="gang" id="gang" value="Join">
+            <label for="gang">Join the girl gang?</label> <br>
+            <input type="checkbox" name="mentor" id="mentor" value="mentor">
+            <label for="mentor">Be a boss babe mentor?</label>
+          </div>
+        </form>
+      </span></li>
+      <li>For good accessibility, <span>checkbox</span> and <span>radio button</span> input types should have associated <span>labels</span> declared alongside them.</li>
+    </ul>
+    <h3>Form Submission</h3>
+    <ul>
+      <li>At the end of a form, we can display a <span>button</span> for a user to click on once they've finished filling out the form. Click the button <span>submits the user's responses</span> to a server or endpoint for processing.</li>
+      <li>To display a <span>submit button</span> we can use an <span>input</span> element with a <span>type</span> attribute of <span>submit</span>, e.g. <br>
+      <span>
+        <input type="submit" value="Send">
+      </span></li>
+      <li>There are several attributes on the <span>form</span> element which control the way a form is submitted. The 2 most important attributes are the <span>action</span> and <span>method</span> attributes.</li>
+      <li>The <span>action</span> takes care of where form data is sent, while the <span>method</span> defines how, e.g. <br>
+      <span>
+        <form method="get" action="send.php"></form>
+      </span></li>
+      <li>The <span>action</span> attribute usually points to a webpage or URL that has been designed to process the form data we're sending.</li>
+      <li>The <span>method</span> attribue controls what type of request is used to send the data. The value of the method can be either <span>get</span> or <span>post</span>. This is because <span>get</span> and <span>post</span> are the 2 types of HTTP web requests we can send.</li>
+      <li><SPAN>HTTP</SPAN> is a communications protocol - i.e. an agreed upon standard way of communicating - between the <span>client</span> (user device) and <span>server</span> (the machine or machines wehre backend software is hosted.</li>
+      <li>To send data via HTTP we send a <span>request</span>. When we submit an HTML form, we tell our webpage to send the data as a <span>HTTP request</span>.</li>
+      <li>A <span>post</span> request is used when we want to post data to server. We can send quite a lot of data in a post request.</li>
+      <li>A <span>get</span> request is usually what we use when we want to retrieve data from the server. Get requests are smaller than post requests.</li>
+      <li>If we want to <span>retrieve information</span>, like when submitting a search form, we usually use a <span>get</span> request.</li>
+      <li>If we want to <span>send a lot of information</span>, such as filling out a job application, we usually use a <span>post</span>request.</li>
+    </ul><br>
+    <p id="contactUs"><a href="/contact.html" target="_blank">Contact Us</a></p><br>
+    <p id="home"><a href="/index.html" target="_blank">Home</a></p>
+    <script src="js/main.js"></script>
+  </body>
+</html>
